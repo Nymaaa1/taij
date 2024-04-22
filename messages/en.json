@@ -1,0 +1,170 @@
+{
+  "homeDefault": { "guests": "Guests", "userLocation": "Location" },
+  "roomDefault": {
+    "showPhotos": "Show all photos",
+    "location": "UlanBator, Mongolia",
+    "guests": "guests",
+    "beds": "beds",
+    "baths": "baths",
+    "bedrooms": "bedrooms",
+    "stayinformation": "Stay information",
+    "amenities": "Amenities",
+    "amenitiesAbout": "About the property's amenities and services",
+    "secondLocation": "Location",
+    "locationofTaij": "Mongolia, UlanBator 25street (Taij Business Hotel)"
+  },
+  "Navigation": [
+    {
+      "id": "ncNanoId_61",
+      "href": "/en",
+      "name": "Home"
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/en/about",
+      "name": "About Us"
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/",
+      "name": "Rooms",
+      "type": "dropdown",
+      "children": [
+        {
+          "id": "1",
+          "href": "/en/hotel/deluxe-room",
+          "name": "Deluxe king room"
+        },
+        {
+          "id": "2",
+          "href": "/home-2",
+          "name": "Deluxe suit family room"
+        },
+        {
+          "id": "3",
+          "href": "/home-3",
+          "name": "Deluxe twin room"
+        }
+      ]
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/en/restaurant",
+      "name": "Restaurant"
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/",
+      "name": "Karaoke",
+      "type": "dropdown",
+      "children": [
+        {
+          "id": "ncNanoId_62",
+          "href": "/",
+          "name": "Online booking"
+        },
+        {
+          "id": "ncNanoId_63",
+          "href": "/home-2",
+          "name": "Real estate",
+          "isNew": true
+        },
+        {
+          "id": "ncNanoId_64",
+          "href": "/home-3",
+          "name": "Home 3",
+          "isNew": true
+        }
+      ]
+    }
+  ],
+  "Footer": [
+    {
+      "id": "5",
+      "title": "About Us",
+      "menus": [
+        { "href": "#", "label": "Gallery" },
+        { "href": "#", "label": "Release Notes" }
+      ]
+    },
+    {
+      "id": "1",
+      "title": "Contact Us",
+      "menus": [
+        {
+          "label": "3 тоот, Хөх сувд хороолол 502-р байр, 10-р хороо, Баян-Гол Дүүрэг, Улаанбаатар хот, Монгол улс"
+        },
+        { "label": "Cell Phone:89813149" },
+        { "label": "Email: cbvud@gmail.com" }
+      ]
+    }
+  ],
+  "deluxeKingRoom": {
+    "images": [
+      "https://images.pexels.com/photos/6129967/pexels-photo-6129967.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      "https://images.pexels.com/photos/7163619/pexels-photo-7163619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/6527036/pexels-photo-6527036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/6969831/pexels-photo-6969831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/6438752/pexels-photo-6438752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/261394/pexels-photo-261394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/2861361/pexels-photo-2861361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/2677398/pexels-photo-2677398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/914128/pexels-photo-914128.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/840667/pexels-photo-840667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/732632/pexels-photo-732632.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/450062/pexels-photo-450062.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/1194233/pexels-photo-1194233.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/236973/pexels-photo-236973.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/1392099/pexels-photo-1392099.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/547116/pexels-photo-547116.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/1002272/pexels-photo-1002272.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/917511/pexels-photo-917511.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/771079/pexels-photo-771079.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "https://images.pexels.com/photos/13461077/pexels-photo-13461077.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/9074921/pexels-photo-9074921.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/9336042/pexels-photo-9336042.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/5418318/pexels-photo-5418318.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/4815278/pexels-photo-4815278.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    ],
+    "name": "Deluxe King Room",
+    "beds": "1",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "5",
+    "information": "Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides accommodation, an outdoor swimming pool, a bar, a shared lounge, a garden and barbecue facilities. Complimentary WiFi is provided.There is a private bathroom with bidet in all units, along with a hairdryer and free toiletries.The Symphony 9 Tam Coc offers a terrace. Both a bicycle rental service and a car rental service are available at the accommodation, while cycling can be enjoyed nearby.",
+    "amenities": [
+      { "name": "la-key", "icon": "la-key" },
+      { "name": "la-luggage-cart", "icon": "la-luggage-cart" },
+      { "name": "la-shower", "icon": "la-shower" },
+      { "name": "la-smoking", "icon": "la-smoking" },
+      { "name": "la-snowflake", "icon": "la-snowflake" },
+      { "name": "la-spa", "icon": "la-spa" },
+      { "name": "la-suitcase", "icon": "la-suitcase" },
+      { "name": "la-suitcase-rolling", "icon": "la-suitcase-rolling" },
+      { "name": "la-swimmer", "icon": "la-swimmer" },
+      { "name": "la-swimming-pool", "icon": "la-swimming-pool" },
+      { "name": "la-tv", "icon": "la-tv" },
+      { "name": "la-umbrella-beach", "icon": "la-umbrella-beach" },
+      { "name": "la-utensils", "icon": "la-utensils" },
+      { "name": "la-wheelchair", "icon": "la-wheelchair" },
+      { "name": "la-wifi", "icon": "la-wifi" },
+      { "name": "la-baby-carriage", "icon": "la-baby-carriage" },
+      { "name": "la-bath", "icon": "la-bath" },
+      { "name": "la-bed", "icon": "la-bed" },
+      { "name": "la-briefcase", "icon": "la-briefcase" },
+      { "name": "la-car", "icon": "la-car" },
+      { "name": "la-cocktail", "icon": "la-cocktail" },
+      { "name": "la-coffee", "icon": "la-coffee" },
+      { "name": "la-concierge-bell", "icon": "la-concierge-bell" },
+      { "name": "la-dice", "icon": "la-dice" },
+      { "name": "la-dumbbell", "icon": "la-dumbbell" },
+      { "name": "la-hot-tub", "icon": "la-hot-tub" },
+      { "name": "la-infinity", "icon": "la-infinity" }
+    ],
+    "price": "120"
+  }
+}

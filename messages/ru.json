@@ -1,0 +1,64 @@
+{
+  "Navigation": [
+    {
+      "id": "ncNanoId_61",
+      "href": "/en",
+      "name": "About Us"
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/",
+      "name": "Rooms",
+      "type": "dropdown",
+      "children": [
+        {
+          "id": "ncNanoId_62",
+          "href": "/",
+          "name": "Online booking"
+        },
+        {
+          "id": "ncNanoId_63",
+          "href": "/home-2",
+          "name": "Real estate",
+          "isNew": true
+        },
+        {
+          "id": "ncNanoId_64",
+          "href": "/home-3",
+          "name": "Home 3",
+          "isNew": true
+        }
+      ]
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/en/restaurant",
+      "name": "Restaurant"
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/",
+      "name": "Karaoke",
+      "type": "dropdown",
+      "children": [
+        {
+          "id": "ncNanoId_62",
+          "href": "/",
+          "name": "Online booking"
+        },
+        {
+          "id": "ncNanoId_63",
+          "href": "/home-2",
+          "name": "Real estate",
+          "isNew": true
+        },
+        {
+          "id": "ncNanoId_64",
+          "href": "/home-3",
+          "name": "Home 3",
+          "isNew": true
+        }
+      ]
+    }
+  ]
+}
