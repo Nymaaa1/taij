@@ -1,11 +1,23 @@
 import __stayListing from "./jsons/__stayListing.json";
 import { DEMO_STAY_CATEGORIES } from "./Taxonomies";
-import { StayDataType } from "./Types";
+import { StayDataType, RoomsDataType } from "./Types";
 import { DEMO_AUTHORS } from "./Authors";
 import { Route } from "@/app/components/routers/type";
+import { useTranslations } from "next-intl";
+
+// const roomData1: RoomsDataType = useTranslations("StandartRoom1");
+// const roomdata2: RoomsDataType = useTranslations("StandartRoom2");
+// const roomData3: RoomsDataType = useTranslations("LuxRoom1");
+// const roomData4: RoomsDataType = useTranslations("LuxRoom2");
+
+// const allRoomData: RoomsDataType[] = [
+//   roomData1,
+//   roomdata2,
+//   roomData3,
+//   roomData4,
+// ];
 
 const DEMO_STAY_LISTINGS = __stayListing.map((post, index): StayDataType => {
-  //  ##########  GET CATEGORY BY CAT ID ######## //
   const category = DEMO_STAY_CATEGORIES.filter(
     (taxonomy) => taxonomy.id === post.listingCategoryId
   )[0];
@@ -20,5 +32,9 @@ const DEMO_STAY_LISTINGS = __stayListing.map((post, index): StayDataType => {
     href: post.href as Route,
   };
 });
+
+// const STAY_LIST = allRoomData.map((post, index): RoomsDataType => {
+//   return post;
+// });
 
 export { DEMO_STAY_LISTINGS };

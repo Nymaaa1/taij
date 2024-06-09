@@ -1,0 +1,29 @@
+.restaurant-fixed-bg {
+  position: relative;
+  background-image: url("/restaurant/1.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  color: white;
+
+  h1 {
+    padding-left: 200px;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .restaurant-fixed-bg {
+    justify-content: center;
+
+    h1 {
+      padding-left: 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}

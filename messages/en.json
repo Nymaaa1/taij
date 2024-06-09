@@ -1,5 +1,4 @@
 {
-  "homeDefault": { "guests": "Guests", "userLocation": "Location" },
   "roomDefault": {
     "showPhotos": "Show all photos",
     "location": "UlanBator, Mongolia",
@@ -11,7 +10,8 @@
     "amenities": "Amenities",
     "amenitiesAbout": "About the property's amenities and services",
     "secondLocation": "Location",
-    "locationofTaij": "Mongolia, UlanBator 25street (Taij Business Hotel)"
+    "locationofTaij": "Mongolia, UlanBator 25street (Taij Business Hotel)",
+    "order": "Deserve"
   },
   "Navigation": [
     {

@@ -89,6 +89,30 @@ export interface StayDataType {
   };
 }
 
+export interface RoomsDataType {
+  id: number;
+  href: Route<string>;
+  asset_image:  string[];
+  title: string;
+  name: string;
+  beds: string;
+  baths: string;
+  bedrooms: string;
+  guests: string;
+  information: string;
+  amenities: RoomAmenity[];
+  price: string;
+  service_charge: string;
+  price_total: string;
+  night: string;
+  square: string;
+}
+
+export interface RoomAmenity {
+  name: string;
+  icon: string;
+}
+
 //
 export interface ExperiencesDataType {
   id: string | number;

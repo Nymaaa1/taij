@@ -1,32 +1,64 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { DEMO_STAY_LISTINGS } from "@/app/components/data/Listings";
 import ButtonClose from "@/app/components/shared/ButtonClose";
 import StayCard2 from "@/app/components/shared/StayCards";
 import GoogleMaps from "./GoogleMaps";
+import { useTranslations } from "next-intl";
 
-const DEMO_STAYS = DEMO_STAY_LISTINGS.filter((_, i) => i < 12);
 export interface SectionGridHasMapProps {}
 
 const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
   const [currentHoverID, setCurrentHoverID] = useState<string | number>(-1);
   const [showFullMapFixed, setShowFullMapFixed] = useState(false);
+  const message = useTranslations("Home-default");
   return (
     <div>
       <div className="relative flex min-h-screen">
-        {/* CARDSSSS */}
         <div className="min-h-screen w-full xl:w-[780px] 2xl:w-[880px] flex-shrink-0 xl:px-8 ">
           <div className="grid grid-cols-1 gap-8">
-            {DEMO_STAYS.map((item) => (
-              <div
-                key={item.id}
-                onMouseEnter={() => setCurrentHoverID((_) => item.id)}
-                onMouseLeave={() => setCurrentHoverID((_) => -1)}
-              >
-                <StayCard2 data={item} />
-              </div>
-            ))}
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="LuxRoom1" />
+            </div>
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="LuxRoom2" />
+            </div>
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="StandartRoom1" />
+            </div>
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="StandartRoom2" />
+            </div>
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="Family-room" />
+            </div>
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="Special-room" />
+            </div>
+            <div
+              onMouseEnter={() => setCurrentHoverID((_) => 1)}
+              onMouseLeave={() => setCurrentHoverID((_) => -1)}
+            >
+              <StayCard2 roomName="LuxRoom2" />
+            </div>
           </div>
         </div>
 
@@ -35,7 +67,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
           onClick={() => setShowFullMapFixed(true)}
         >
           <i className="text-lg las la-map"></i>
-          <span>Show map</span>
+          <span>{message("show-map")}</span>
         </div>
         <div
           className={`xl:flex-grow xl:static xl:block ${

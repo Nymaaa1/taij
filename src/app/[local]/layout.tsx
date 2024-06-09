@@ -60,9 +60,7 @@ export default function RootLayout({
       <body className="bg-white text-base dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SiteHeader />
-          <div className={`nc-ListingStayPage relative `}>
             {children}
-          </div>
           <FooterNav />
           <Footer />
         </NextIntlClientProvider>

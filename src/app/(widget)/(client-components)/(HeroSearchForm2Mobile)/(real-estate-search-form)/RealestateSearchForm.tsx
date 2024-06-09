@@ -1,43 +1,35 @@
 "use client";
 
 import React, { useState } from "react";
-import convertNumbThousand from "@/app/components/utils/convertNumbThousand";
-import LocationInput from "../../(HeroSearchForm)/LocationInput";
-import PriceRangeInput from "./PriceRangeInput";
-import PropertyTypeSelect from "./PropertyTypeSelect";
-import { ClassOfProperties } from "../../type";
+import { GuestsObject } from "../../type";
+import DatesRangeInput from "../../(HeroSearchForm)/(stay-search-form)/DatesRangeInput";
+import converSelectedDateToString from "./ConvertSelectedDate";
+import LocationInputMobile from "./LocationInputMobile";
+import GuestsInputMobile from "../../(HeroSearchForm)/GuestsInput";
 
-const RealestateSearchForm = () => {
-  //
+const StaySearchForm = () => {
+  
   const [fieldNameShow, setFieldNameShow] = useState<
-    "location" | "propertyType" | "price"
+    "location" | "dates" | "guests"
   >("location");
-  //
+  
   const [locationInputTo, setLocationInputTo] = useState("");
-  const [rangePrices, setRangePrices] = useState([100000, 4000000]);
-  const [typeOfProperty, setTypeOfProperty] = useState<ClassOfProperties[]>([
-    {
-      name: "Duplex House",
-      description: "Have a place to yourself",
-      checked: true,
-    },
-    {
-      name: "Ferme House",
-      description: "Have your own room and share some common spaces",
-      checked: true,
-    },
-    {
-      name: "Chalet House",
-      description:
-        "Have a private or shared room in a boutique hotel, hostel, and more",
-      checked: true,
-    },
-    {
-      name: "Maison House",
-      description: "Stay in a shared space, like a common room",
-      checked: false,
-    },
-  ]);
+  const [guestInput, setGuestInput] = useState<GuestsObject>({
+    guestAdults: 0,
+    guestChildren: 0,
+    guestInfants: 0,
+  });
+  const [startDate, setStartDate] = useState<Date | null>(
+    new Date("2023/02/06")
+  );
+  const [endDate, setEndDate] = useState<Date | null>(new Date("2023/02/23"));
+  
+
+  const onChangeDate = (dates: [Date | null, Date | null]) => {
+    const [start, end] = dates;
+    setStartDate(start);
+    setEndDate(end);
+  };
 
   const renderInputLocation = () => {
     const isActive = fieldNameShow === "location";
@@ -58,30 +50,59 @@ const RealestateSearchForm = () => {
             <span>{locationInputTo || "Location"}</span>
           </button>
         ) : (
-          <LocationInput
-            // headingText="Where to find?"
-            // defaultValue={locationInputTo}
-            // onChange={(value: any) => {
-            //   setLocationInputTo(value);
-            //   setFieldNameShow("propertyType");
-            // }}
+          <LocationInputMobile
+            defaultValue={locationInputTo}
+            onChange={(value) => {
+              setLocationInputTo(value);
+              setFieldNameShow("dates");
+            }}
           />
         )}
       </div>
     );
   };
 
-  const renderInputPropertyType = () => {
-    const isActive = fieldNameShow === "propertyType";
+  const renderInputDates = () => {
+    const isActive = fieldNameShow === "dates";
 
-    let typeOfPropertyText = "";
-    if (typeOfProperty && typeOfProperty.length > 0) {
-      typeOfPropertyText = typeOfProperty
-        .filter((item) => item.checked)
-        .map((item) => {
-          return item.name;
-        })
-        .join(", ");
+    return (
+      <div
+        className={`w-full bg-white dark:bg-neutral-800 overflow-hidden ${
+          isActive
+            ? "rounded-2xl shadow-lg"
+            : "rounded-xl shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)]"
+        }`}
+      >
+        {!isActive ? (
+          <button
+            className={`w-full flex justify-between text-sm font-medium p-4  `}
+            onClick={() => setFieldNameShow("dates")}
+          >
+            <span className="text-neutral-400">When</span>
+            <span>
+              {startDate
+                ? converSelectedDateToString([startDate, endDate])
+                : "Add date"}
+            </span>
+          </button>
+        ) : (
+          <DatesRangeInput />
+        )}
+      </div>
+    );
+  };
+
+  const renderInputGuests = () => {
+    const isActive = fieldNameShow === "guests";
+    let guestSelected = "";
+    if (guestInput.guestAdults || guestInput.guestChildren) {
+      const guest =
+        (guestInput.guestAdults || 0) + (guestInput.guestChildren || 0);
+      guestSelected += `${guest} guests`;
+    }
+
+    if (guestInput.guestInfants) {
+      guestSelected += `, ${guestInput.guestInfants} infants`;
     }
 
     return (
@@ -95,51 +116,13 @@ const RealestateSearchForm = () => {
         {!isActive ? (
           <button
             className={`w-full flex justify-between text-sm font-medium p-4`}
-            onClick={() => setFieldNameShow("propertyType")}
+            onClick={() => setFieldNameShow("guests")}
           >
-            <span className="text-neutral-400">Property</span>
-            <span className="truncate ml-5">
-              {typeOfPropertyText || "Add property"}
-            </span>
+            <span className="text-neutral-400">Who</span>
+            <span>{guestSelected || `Add guests`}</span>
           </button>
         ) : (
-          <PropertyTypeSelect
-            defaultValue={typeOfProperty}
-            onChange={setTypeOfProperty}
-          />
-        )}
-      </div>
-    );
-  };
-
-  const renderInputPrice = () => {
-    const isActive = fieldNameShow === "price";
-
-    return (
-      <div
-        className={`w-full bg-white dark:bg-neutral-800 overflow-hidden ${
-          isActive
-            ? "rounded-2xl shadow-lg"
-            : "rounded-xl shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)]"
-        }`}
-      >
-        {!isActive ? (
-          <button
-            className={`w-full flex justify-between text-sm font-medium p-4`}
-            onClick={() => setFieldNameShow("price")}
-          >
-            <span className="text-neutral-400">Price</span>
-            <span>
-              {`$${convertNumbThousand(
-                rangePrices[0] / 1000
-              )}k ~ $${convertNumbThousand(rangePrices[1] / 1000)}k`}
-            </span>
-          </button>
-        ) : (
-          <PriceRangeInput
-            defaultValue={rangePrices}
-            onChange={setRangePrices}
-          />
+          <GuestsInputMobile defaultValue={guestInput} onChange={setGuestInput} />
         )}
       </div>
     );
@@ -151,12 +134,12 @@ const RealestateSearchForm = () => {
         {/*  */}
         {renderInputLocation()}
         {/*  */}
-        {renderInputPropertyType()}
+        {renderInputDates()}
         {/*  */}
-        {renderInputPrice()}
+        {renderInputGuests()}
       </div>
     </div>
   );
 };
 
-export default RealestateSearchForm;
+export default StaySearchForm;

@@ -1,12 +1,14 @@
 import { PathName } from "@/app/components/routers/type";
 import Link from "next/link";
 import React, { FC } from "react";
+import { useTranslations } from "next-intl";
 
 export interface Props {
   href?: PathName;
 }
 
 const ButtonSubmit: FC<Props> = ({ href }) => {
+  const message = useTranslations("Mobile");
   return (
     <Link
       href={"/href"}
@@ -14,7 +16,7 @@ const ButtonSubmit: FC<Props> = ({ href }) => {
       className="h-14 md:h-16 w-full md:w-16 rounded-full bg-[#CAA866] hover:bg-[#b5975b] flex items-center justify-center text-neutral-50 focus:outline-none"
       // style={{ backgroundColor: "#CAA866" }}
     >
-      <span className="mr-3 md:hidden">Search</span>
+      <span className="mr-3 md:hidden">{message("search")}</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"

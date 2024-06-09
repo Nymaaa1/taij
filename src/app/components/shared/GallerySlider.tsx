@@ -13,8 +13,8 @@ export interface GallerySliderProps {
   className?: string;
   galleryImgs: (StaticImageData | string)[];
   ratioClass?: string;
-  uniqueID: string;
-  href?: Route<string>;
+  uniqueID: string | number;
+  href?: Route<string> | string;
   imageClass?: string;
   galleryClass?: string;
   navigation?: boolean;
@@ -28,8 +28,8 @@ export default function GallerySlider({
   uniqueID = "uniqueID",
   galleryClass = "rounded-xl",
   navigation = true,
+  href,
 }: GallerySliderProps) {
-  const href = "/listing-stay-detail";
   const [loaded, setLoaded] = useState(false);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -73,7 +73,7 @@ export default function GallerySlider({
       >
         <div className={`w-full overflow-hidden ${galleryClass}`}>
           <Link
-            href={href}
+            href={{ pathname: href || "/" }}
             className={`relative flex items-center justify-center ${ratioClass}`}
           >
             <AnimatePresence initial={false} custom={direction}>

@@ -11,6 +11,7 @@ import SwitchDarkMode from "@/app/components/shared/SwitchDarkMode";
 import Link from "next/link";
 import LangDropdown from "@/app/(widget)/(client-components)/(Header)/LangDropdown";
 import { useTranslations } from "next-intl";
+import ButtonPrimary from "../shared/ButtonPrimary";
 
 export interface NavMobileProps {
   data?: NavItemType[];
@@ -126,7 +127,14 @@ const NavMobile: React.FC<NavMobileProps> = ({ onClickClose }) => {
         {translatedValues.map(_renderItem)}
       </ul>
       <div className="flex items-center justify-between py-6 px-5">
-       
+      <a
+          className="inline-block"
+          href="https://themeforest.net/item/chisfis-online-booking-nextjs-template/43399526"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ButtonPrimary>Instagram</ButtonPrimary>
+        </a>
 
         <LangDropdown
           className="flex"

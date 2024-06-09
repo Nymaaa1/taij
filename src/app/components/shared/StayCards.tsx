@@ -1,44 +1,26 @@
 import React, { FC } from "react";
 import GallerySlider from "@/app/components/shared/GallerySlider";
 import { DEMO_STAY_LISTINGS } from "@/app/components/data/Listings";
-import { StayDataType } from "@/app/data/types";
 import Badge from "@/app/components/shared/Badge";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export interface StayCardHProps {
   className?: string;
-  data?: StayDataType;
+  roomName?: string;
 }
 
-const DEMO_DATA = DEMO_STAY_LISTINGS[0];
-
-const StayCardH: FC<StayCardHProps> = ({
-  className = "",
-  data = DEMO_DATA,
-}) => {
-  const {
-    galleryImgs,
-    listingCategory,
-    address,
-    title,
-    href,
-    like,
-    saleOff,
-    isAds,
-    price,
-    reviewStart,
-    reviewCount,
-    id,
-  } = data;
+const StayCardH: FC<StayCardHProps> = ({ className = "", roomName = "" }) => {
+  const message = useTranslations(roomName);
 
   const renderSliderGallery = () => {
     return (
       <div className="relative flex-shrink-0 w-full md:w-72 ">
         <GallerySlider
           ratioClass="aspect-w-6 aspect-h-5"
-          galleryImgs={galleryImgs}
-          uniqueID={`StayCardH_${id}`}
-          href={href}
+          galleryImgs={message.raw("asset_image")}
+          uniqueID={`StayCardH_1`}
+          href={message("href")}
         />
       </div>
     );
@@ -48,46 +30,43 @@ const StayCardH: FC<StayCardHProps> = ({
     return (
       <div className="hidden sm:grid grid-cols-3 gap-2">
         <div className="space-y-3">
-          <div className="flex items-center space-x-3">
-            <i className="las la-user text-lg"></i>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
-              6 guests
-            </span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <i className="las la-bed text-lg"></i>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
-              6 beds
-            </span>
-          </div>
+          {message
+            .raw("amenities")
+            .filter((_: any, i: number) => i < 2)
+            .map((item: { name: String; icon: any }, index: number) => (
+              <div key={index} className="flex items-center space-x-3">
+                <i className={`text-3xl las ${item.icon} text-lg`}></i>
+                <span className="text-sm text-neutral-500 dark:text-neutral-400">
+                  {item.name}
+                </span>
+              </div>
+            ))}
         </div>
         <div className="space-y-3">
-          <div className="flex items-center space-x-3">
-            <i className="las la-bath text-lg"></i>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
-              3 baths
-            </span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <i className="las la-smoking-ban text-lg"></i>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
-              No smoking
-            </span>
-          </div>
+          {message
+            .raw("amenities")
+            .filter((_: any, i: number) => i >= 2 && i < 4)
+            .map((item: { name: String; icon: any }, index: number) => (
+              <div key={index} className="flex items-center space-x-3">
+                <i className={`text-3xl las ${item.icon} text-lg`}></i>
+                <span className="text-sm text-neutral-500 dark:text-neutral-400">
+                  {item.name}
+                </span>
+              </div>
+            ))}
         </div>
         <div className="space-y-3">
-          <div className="flex items-center space-x-3">
-            <i className="las la-door-open text-lg"></i>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
-              6 bedrooms
-            </span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <i className="las la-wifi text-lg"></i>
-            <span className="text-sm text-neutral-500 dark:text-neutral-400">
-              Wifi
-            </span>
-          </div>
+          {message
+            .raw("amenities")
+            .filter((_: any, i: number) => i >= 4 && i < 6)
+            .map((item: { name: String; icon: any }, index: number) => (
+              <div key={index} className="flex items-center space-x-3">
+                <i className={`text-3xl las ${item.icon} text-lg`}></i>
+                <span className="text-sm text-neutral-500 dark:text-neutral-400">
+                  {item.name}
+                </span>
+              </div>
+            ))}
         </div>
       </div>
     );
@@ -97,16 +76,8 @@ const StayCardH: FC<StayCardHProps> = ({
     return (
       <div className="flex-grow p-3 sm:p-5 flex flex-col">
         <div className="space-y-2">
-          <div className="text-sm text-neutral-500 dark:text-neutral-400">
-            <span>
-              {listingCategory.name} in {address}
-            </span>
-          </div>
-          <div className="flex items-center space-x-2">
-            {isAds && <Badge name="ADS" color="green" />}
-            <h2 className="text-lg font-medium capitalize">
-              <span className="line-clamp-1">{title}</span>
-            </h2>
+          <div className="text-md text-neutral-900 dark:text-neutral-100">
+            <span>{message("name")}</span>
           </div>
         </div>
         <div className="hidden sm:block w-14 border-b border-neutral-100 dark:border-neutral-800 my-4"></div>
@@ -114,10 +85,10 @@ const StayCardH: FC<StayCardHProps> = ({
         <div className="w-14 border-b border-neutral-100 dark:border-neutral-800 my-4"></div>
         <div className="flex justify-between items-end">
           <span className="text-base font-semibold text-secondary-500">
-            {price}
+            {message("price")}₮
             {` `}
             <span className="text-sm text-neutral-500 dark:text-neutral-400 font-normal">
-              /night
+              /{message("night")}
             </span>
           </span>
         </div>
@@ -129,7 +100,11 @@ const StayCardH: FC<StayCardHProps> = ({
     <div
       className={`nc-StayCardH group relative bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-800 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow ${className}`}
     >
-      <Link href={href} className="absolute inset-0"></Link>
+      <Link
+        href={{ pathname: message("href") || "/" }}
+        className="absolute inset-0"
+      ></Link>
+       {/* TODO ene hesegt ashilasan */}
       <div className="grid grid-cols-1 md:flex md:flex-row ">
         {renderSliderGallery()}
         {renderContent()}

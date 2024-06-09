@@ -8,19 +8,10 @@ export interface ListingRealEstateMapPageProps {}
 
 const ListingRealEstateMapPage: FC<ListingRealEstateMapPageProps> = ({}) => {
   return (
-    <div>
+    <div className="nc-ListingStayPage relative">
       <BgGlassmorphism />
-      <div className="">
-        <SectionHeroArchivePage
-          currentPage="Experiences"
-          currentTab="Experiences"
-          listingType={
-            <>
-              <i className=" las la-door-open text-2xl"></i>
-              <span className="ml-2.5">159 rooms</span>
-            </>
-          }
-        />
+      <div className="lg:pb-10">
+        <SectionHeroArchivePage />
       </div>
       <div className="container pb-24 lg:pb-28 2xl:pl-10 xl:pr-0 xl:max-w-none">
         <SectionGridHasMap />

@@ -1,4 +1,14 @@
 {
+  "Home-default": {
+    "show-map": "Газрын зураг харах"
+  },
+  "Mobile": {
+    "search": "Хайх",
+    "whereto": "",
+    "clear": "Цэвэрлэх",
+    "when": "Хэзээ",
+    "who": "Хэн"
+  },
   "roomDefault": {
     "showPhotos": "Зураг харах",
     "location": "Улаанбаатар, Монгол",
@@ -8,38 +18,65 @@
     "bedrooms": "өрөө",
     "stayinformation": "Мэдээлэл",
     "amenities": "Тав тух",
-    "amenitiesAbout": "About the property's amenities and services",
+    "amenitiesAbout": "Өрөөний тав тухтай байдал, үйлчилгээний талаар",
     "secondLocation": "Хаяг",
-    "locationofTaij": "Mongolia, UlanBator 25street (Taij Business Hotel)"
+    "locationofTaij": "Монгол Улаанбаатар 25р хороолол Тайж бизнес зочид буудал",
+    "order": "Захиалах"
   },
   "Navigation": [
     {
       "id": "ncNanoId_61",
-      "href": "/",
+      "href": "/mn/about",
       "name": "Бидний тухай"
     },
     {
       "id": "ncNanoId_61",
-      "href": "/",
       "name": "Өрөө",
       "type": "dropdown",
       "children": [
         {
           "id": "ncNanoId_62",
-          "href": "mn/hotel/deluxe-room",
-          "name": "Deluxe king room"
+          "name": "Стандарт өрөө",
+          "type": "dropdown",
+          "children": [
+            {
+              "id": "ncNanoId_62",
+              "href": "/mn/hotel/standart-room",
+              "name": "Стандарт өрөө 1 ортой"
+            },
+            {
+              "id": "ncNanoId_63",
+              "href": "/mn/hotel/standart-room-deluxe",
+              "name": "Стандарт өрөө 2 ортой"
+            }
+          ]
         },
         {
           "id": "ncNanoId_63",
-          "href": "/home-2",
-          "name": "Real estate",
-          "isNew": true
+          "name": "Бүтэн люкс",
+          "type": "dropdown",
+          "children": [
+            {
+              "id": "ncNanoId_62",
+              "href": "/mn/hotel/lux-room",
+              "name": "Бүтэн люкс өрөө 2 ортой"
+            },
+            {
+              "id": "ncNanoId_63",
+              "href": "/mn/hotel/lux-room-deluxe",
+              "name": "Бүтэн люкс өрөө 3 ортой"
+            }
+          ]
         },
         {
           "id": "ncNanoId_64",
-          "href": "/home-3",
-          "name": "Home 3",
-          "isNew": true
+          "href": "/mn/hotel/special-room",
+          "name": "Тусгай өрөө"
+        },
+        {
+          "id": "ncNanoId_65",
+          "href": "/mn/hotel/family-room",
+          "name": "Гэр бүлийн өрөө"
         }
       ]
     },
@@ -77,116 +114,245 @@
   "Footer": [
     {
       "id": "5",
-      "title": "Getting started",
+      "title": "About Us",
       "menus": [
-        { "href": "#", "label": "Installation" },
-        { "href": "#", "label": "Release Notes" },
-        { "href": "#", "label": "Upgrade Guide" },
-        { "href": "#", "label": "Browser Support" },
-        { "href": "#", "label": "Editor Support" }
+        { "href": "#", "label": "Gallery" },
+        { "href": "#", "label": "Release Notes" }
       ]
     },
     {
       "id": "1",
-      "title": "Explore",
+      "title": "Contact Us",
       "menus": [
-        { "href": "#", "label": "Design features" },
-        { "href": "#", "label": "Prototyping" },
-        { "href": "#", "label": "Design systems" },
-        { "href": "#", "label": "Pricing" },
-        { "href": "#", "label": "Security" }
-      ]
-    },
-    {
-      "id": "2",
-      "title": "Resources",
-      "menus": [
-        { "href": "#", "label": "Best practices" },
-        { "href": "#", "label": "Support" },
-        { "href": "#", "label": "Developers" },
-        { "href": "#", "label": "Learn design" },
-        { "href": "#", "label": "Releases" }
-      ]
-    },
-    {
-      "id": "4",
-      "title": "Community",
-      "menus": [
-        { "href": "#", "label": "Discussion Forums" },
-        { "href": "#", "label": "Code of Conduct" },
-        { "href": "#", "label": "Community Resources" },
-        { "href": "#", "label": "Contributing" },
-        { "href": "#", "label": "Concurrent Mode" }
+        {
+          "label": "3 тоот, Хөх сувд хороолол 502-р байр, 10-р хороо, Баян-Гол Дүүрэг, Улаанбаатар хот, Монгол улс"
+        },
+        { "label": "Cell Phone:89813149" },
+        { "label": "Email: cbvud@gmail.com" }
       ]
     }
   ],
-  "deluxeKingRoom": {
-    "images": [
-      "https://images.pexels.com/photos/6129967/pexels-photo-6129967.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      "https://images.pexels.com/photos/7163619/pexels-photo-7163619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/6527036/pexels-photo-6527036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/6969831/pexels-photo-6969831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/6438752/pexels-photo-6438752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/261394/pexels-photo-261394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/2861361/pexels-photo-2861361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/2677398/pexels-photo-2677398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/914128/pexels-photo-914128.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/840667/pexels-photo-840667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/732632/pexels-photo-732632.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/450062/pexels-photo-450062.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1194233/pexels-photo-1194233.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/236973/pexels-photo-236973.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1392099/pexels-photo-1392099.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/547116/pexels-photo-547116.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/1002272/pexels-photo-1002272.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/917511/pexels-photo-917511.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/771079/pexels-photo-771079.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "https://images.pexels.com/photos/13461077/pexels-photo-13461077.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/9074921/pexels-photo-9074921.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/9336042/pexels-photo-9336042.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/5418318/pexels-photo-5418318.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/4815278/pexels-photo-4815278.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  "StandartRoom1": {
+    "id": 1,
+    "href": "/mn/hotel/standart-room",
+    "asset_image": [
+      "/standart1/standart1_1.jpg",
+      "/standart1/standart1_2.jpg",
+      "/standart1/standart1_6.jpg",
+      "/standart1/standart1_3.jpg",
+      "/standart1/standart1_8.jpg",
+      "/standart1/standart1_7.jpg",
+      "/standart1/standart1_4.jpg",
+      "/standart1/standart1_5.jpg"
     ],
-    "name": "Deluxe King Room",
+    "title": "Standart VIP room",
+    "name": "Стандарт өрөө 1 ортой",
     "beds": "1",
     "baths": "1",
     "bedrooms": "1",
-    "guests": "5",
-    "information": "Нуурын үзэмжээр хангадаг, Нин Бин дэх The Symphony 9 Tam Coc нь байр, гадаа усан бассейн, баар, нийтийн амралтын өрөө, цэцэрлэг, шарсан мах хийх байгууламжтай. Үнэгүй WiFi үйлчилгээтэй. Бүх өрөөнд үс хатаагч, үнэгүй ариун цэврийн хэрэглэл бүхий хувийн угаалгын өрөө байдаг. Symphony 9 Tam Coc нь дэнжтэй. Тус байранд унадаг дугуй түрээслэх үйлчилгээ, машин түрээслэх үйлчилгээ аль алиныг нь авах боломжтой бөгөөд ойролцоо дугуй унах боломжтой.",
+    "guests": "2",
+    "information": "Минималсит загварын чиг хандлагатай, таны тайван амгалан амралт, эргэн тойронд эмх цэгцтэй , чөлөөтэй амрахад туслана.",
     "amenities": [
-      { "name": "la-key", "icon": "la-key" },
-      { "name": "la-luggage-cart", "icon": "la-luggage-cart" },
-      { "name": "la-shower", "icon": "la-shower" },
-      { "name": "la-smoking", "icon": "la-smoking" },
-      { "name": "la-snowflake", "icon": "la-snowflake" },
-      { "name": "la-spa", "icon": "la-spa" },
-      { "name": "la-suitcase", "icon": "la-suitcase" },
-      { "name": "la-suitcase-rolling", "icon": "la-suitcase-rolling" },
-      { "name": "la-swimmer", "icon": "la-swimmer" },
-      { "name": "la-swimming-pool", "icon": "la-swimming-pool" },
-      { "name": "la-tv", "icon": "la-tv" },
-      { "name": "la-umbrella-beach", "icon": "la-umbrella-beach" },
-      { "name": "la-utensils", "icon": "la-utensils" },
-      { "name": "la-wheelchair", "icon": "la-wheelchair" },
-      { "name": "la-wifi", "icon": "la-wifi" },
-      { "name": "la-baby-carriage", "icon": "la-baby-carriage" },
-      { "name": "la-bath", "icon": "la-bath" },
-      { "name": "la-bed", "icon": "la-bed" },
-      { "name": "la-briefcase", "icon": "la-briefcase" },
-      { "name": "la-car", "icon": "la-car" },
-      { "name": "la-cocktail", "icon": "la-cocktail" },
-      { "name": "la-coffee", "icon": "la-coffee" },
-      { "name": "la-concierge-bell", "icon": "la-concierge-bell" },
-      { "name": "la-dice", "icon": "la-dice" },
-      { "name": "la-dumbbell", "icon": "la-dumbbell" },
-      { "name": "la-hot-tub", "icon": "la-hot-tub" },
-      { "name": "la-infinity", "icon": "la-infinity" }
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" }
     ],
-
-    "price": "120"
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "33 м/кв"
+  },
+  "StandartRoom2": {
+    "id": 2,
+    "href": "/mn/hotel/standart-room-deluxe",
+    "asset_image": [
+      "/standart2/standart2_1.jpg",
+      "/standart2/standart2_2.jpg",
+      "/standart2/standart2_3.jpg",
+      "/standart2/standart2_4.jpg",
+      "/standart2/standart2_5.jpg",
+      "/standart2/standart2_6.jpg",
+      "/standart2/standart2_7.jpg"
+    ],
+    "title": "Standart VIP room",
+    "name": "Стандарт өрөө 2 ортой",
+    "beds": "2",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Минималсит загварын чиг хандлагатай, таны тайван амгалан амралт, эргэн тойронд эмх цэгцтэй , чөлөөтэй амрахад туслана.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "33 м/кв"
+  },
+  "LuxRoom1": {
+    "id": 3,
+    "href": "/mn/hotel/lux-room",
+    "asset_image": [
+      "/lux2/lux2_1.jpg",
+      "/lux2/lux2_8.jpg",
+      "/lux2/lux2_2.jpg",
+      "/lux2/lux2_3.jpg",
+      "/lux2/lux2_4.jpg",
+      "/lux2/lux2_5.jpg",
+      "/lux2/lux2_6.jpg",
+      "/lux2/lux2_7.jpg"
+    ],
+    "title": "Lux VIP room",
+    "name": "Бүтэн люкс өрөө 2 ортой",
+    "beds": "2",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Бүтэн люкс өрөө нь хотын үзэмж харагдах цэлгэр том цонх, минималист тохижилттой, эмх цэгцтэй орчин, тухтай амрах нөхцөлийг бүрдүүлсэн болно.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "46 м/кв"
+  },
+  "LuxRoom2": {
+    "id": 4,
+    "href": "/mn/hotel/lux-room-deluxe",
+    "asset_image": [
+      "/lux3/lux3_1.jpg",
+      "/lux3/lux3_5.jpg",
+      "/lux3/lux3_3.jpg",
+      "/lux3/lux3_7.jpg",
+      "/lux3/lux3_8.jpg",
+      "/lux3/lux3_6.jpg",
+      "/lux3/lux3_2.jpg",
+      "/lux3/lux3_4.jpg",
+      "/lux3/lux3_9.jpg",
+      "/lux3/lux3_10.jpg"
+    ],
+    "title": "Lux VIP room",
+    "name": "Бүтэн люкс өрөө 3 ортой",
+    "beds": "3",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Бүтэн люкс өрөө нь хотын үзэмж харагдах цэлгэр том цонх, минималист тохижилттой, эмх цэгцтэй орчин, тухтай амрах нөхцөлийг бүрдүүлсэн болно.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "64 м/кв"
+  },
+  "Special-room": {
+    "id": 5,
+    "href": "/mn/hotel/special-room",
+    "asset_image": [
+      "/02 (1).jpg",
+      "/02 (2).jpg",
+      "/02 (3).jpg",
+      "/02 (4).jpg",
+      "/02 (5).jpg",
+      "/02 (6).jpg",
+      "/02 (7).jpg",
+      "/02 (8).jpg"
+    ],
+    "title": "Special VIP room",
+    "name": "Тусгай өрөө 1 ортой",
+    "beds": "1",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Ерөнхийлөгчийн зориулалттай тусгай өрөө зочины болон, амралтын  гэсэн 2 тусдаа дамждаг өрөөтэй. Таны ажил амралтыг хослуулж, мөн алжаал тайлахад зориулагдсан саун душ, нэг дор.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" },
+      { "name": "Ажлын ширээ", "icon": "la-table" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "78 м/кв"
+  },
+  "Family-room": {
+    "id": 6,
+    "href": "/mn/hotel/family-room",
+    "asset_image": [
+      "/family/family1.jpg",
+      "/family/family2.jpg",
+      "/family/family11.jpg",
+      "/family/family4.jpg",
+      "/family/family5.jpg",
+      "/family/family6.jpg",
+      "/family/family7.jpg",
+      "/family/family8.jpg",
+      "/family/family9.jpg",
+      "/family/family10.jpg",
+      "/family/family3.jpg",
+      "/family/family12.jpg"
+    ],
+    "title": "Family VIP room",
+    "name": "Гэр бүлийн өрөө 1 ортой",
+    "beds": "1",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Гэр бүлийн тав тухтай байдлыг бий болгож, олон хоногоор байрлаж амрахад зориулагдсан мини гал тогоо,  амралтын өрөө тусдаа тав тухтай орчин таныг амраах болно.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" },
+      { "name": "Ажлын ширээ", "icon": "la-table" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": " м/кв"
   }
 }
