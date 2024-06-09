@@ -17,7 +17,7 @@ const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({}) => {
             <h1 className="mb-4 text-4xl font-bold">ABOUT US</h1>
             <span className="block text-base xl:text-base text-neutral-6000 dark:text-neutral-400">
               Монгол улсад зочилох үйлчилгээний салбартаа 4 одны зэрэглэл
-              хангасан "Тайж бизнес" зочид буудал нь нийт 4 зэрэглэлийн 39 өрөө,
+              хангасан Тайж бизнес зочид буудал нь нийт 4 зэрэглэлийн 39 өрөө,
               Кофе шоп, Ази Европ ресторан, Караоке өрөө, Саун, Фитнесийн заал,
               Хурал семнарийн өрөө, бүхий үйлчилгээний цогцолбор юм.
             </span>

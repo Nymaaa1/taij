@@ -34,7 +34,7 @@ const HeaderRoomsPage: FC<HeaderRoomsPageProps> = ({
         <div className="mt-24">
           <div className="hidden lg:flow-root w-full">
             <div className="z-10 lg:-mt-40 xl:-mt-56 w-full">
-              <HeroSearchForm currentPage="Stays" currentTab="Stays" />
+              <HeroSearchForm />
             </div>
           </div>
         </div>
