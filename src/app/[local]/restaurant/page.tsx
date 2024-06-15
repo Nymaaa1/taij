@@ -6,10 +6,12 @@ import RestaurantIntroduction from "@/app/(widget)/(restaurant)/Introduction";
 import RestaurantHome from "@/app/(widget)/(restaurant)/Home";
 import HotPotRestaurant from "@/app/(widget)/(restaurant)/Hotpot";
 import edelwiessLogo from "@/app/components/images/logos/edelweiss.png";
+import { useTranslations } from "next-intl";
 
 export interface PageAboutProps {}
 
 const PageAbout: FC<PageAboutProps> = ({}) => {
+  const message = useTranslations("Restaurant");
   return (
     <div className="">
       <BgGlassmorphism />
@@ -22,11 +24,10 @@ const PageAbout: FC<PageAboutProps> = ({}) => {
               src={edelwiessLogo}
               alt="My Photo"
               width={100}
-              height={10}
+              height={100}
             />
             <span className="block text-base xl:text-lg text-neutral-6000 dark:text-neutral-400">
-              Манай рестораны мэргэжлийн тогооч нар өдөр бүр Ази, Европ төрлийг
-              зоогийг уламжлалт жорын дагуу бэлтгэн та бүхэндээ хүргэж байна
+              {message("edelweiss-text")}
             </span>
           </div>
           <div className="flex-grow">
@@ -36,6 +37,7 @@ const PageAbout: FC<PageAboutProps> = ({}) => {
               alt=""
               width={1000}
               height={100}
+              style={{ borderRadius: "10px" }}
             />
           </div>
         </div>

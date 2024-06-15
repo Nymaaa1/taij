@@ -4,6 +4,7 @@ import rightImgs from "@/app/components/images/about-hero-right.png";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
 import coffeeShopLogo2 from "@/app/components/images/logos/restaurant-logo.png";
+import { useTranslations } from "next-intl";
 
 export interface HotPotRestaurantProps {
   className?: string;
@@ -16,6 +17,7 @@ const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
   rightImg = rightImgs,
   type = "type1",
 }) => {
+  const message = useTranslations("Restaurant");
   return (
     <div
       className={`nc-SectionOurFeatures relative flex flex-col items-center ${
@@ -35,28 +37,28 @@ const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
 
         <ul className="space-y-10 mt-16">
           <li className="space-y-4">
-            <Badge name="Цагийн хуваарь" />
+            <Badge name={message("time")} />
             <span className="block text-xl font-semibold">10:00 - 22:00</span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              170 хүн хүлээж авах хүчин чадалтай Тайж hot pot ресторан нь 10:00
-              цагаас үдшийн 22:00 цаг хүртэл танд үйлчлэн ажиллаж байна.
+              {message("time-text2")}
             </span>
           </li>
           <li className="space-y-4">
-            <Badge color="green" name="Хамт олон " />
-            <span className="block text-xl font-semibold">Үйлчилгээ</span>
+            <Badge color="green" name={message("job")} />
+            <span className="block text-xl font-semibold">
+              {message("service")}
+            </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              Манай ресторан нь хятад тогоочийн амталсан нарийн хоол, өөрийн
-              сонирхолд нийцүүлэн хийж идэх халуун тогоо, болон Ази чиг урсгалыг
-              барин үйлчилгээ явуулж байна.
+              {message("service-text")}
             </span>
           </li>
           <li className="space-y-4">
-            <Badge color="green" name="Давуу тал " />
-            <span className="block text-xl font-semibold">Үйлчилгээ</span>
+            <Badge color="green" name={message("advantage")} />
+            <span className="block text-xl font-semibold">
+              {message("service")}
+            </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              Манай рестораны давуу тал тав тухтай найрсаг үйлчилгээ, хоолны
-              давтагдашгүй амт чанарыг тан бүхэндээ санал болгож байна.
+              {message("advantage-text")}
             </span>
           </li>
         </ul>

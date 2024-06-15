@@ -10,6 +10,7 @@ import headIcon from "@/app/components/images/logos/head-image.png";
 import SiteHeader from "../(widget)/(client-components)/(Header)/SiteHeader";
 import FooterNav from "../components/footer/FooterNav";
 import Footer from "../components/footer/Footer";
+import { getTranslations } from "next-intl/server";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,25 +24,37 @@ const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "TAIJ BUSINESS HOTEL",
-  icons: {
-    icon: [
-      {
-        rel: "icon",
-        media: "(prefers-color-scheme: light)",
-        type: "image/png",
-        url: headIcon.src,
-      },
-      {
-        rel: "icon",
-        media: "(prefers-color-scheme: dark)",
-        type: "image/png",
-        url: headIcon.src,
-      },
-    ],
-  },
-};
+interface GenerationMetaData {
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
+}
+
+export async function generateMetadata({
+  params: { locale },
+}: Readonly<GenerationMetaData>) {
+  const t = await getTranslations(locale);
+  return {
+    title: t("Meta-data"),
+    icons: {
+      icon: [
+        {
+          rel: "icon",
+          media: "(prefers-color-scheme: light)",
+          type: "image/png",
+          url: headIcon.src,
+        },
+        {
+          rel: "icon",
+          media: "(prefers-color-scheme: dark)",
+          type: "image/png",
+          url: headIcon.src,
+        },
+      ],
+    },
+  };
+}
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -60,7 +73,7 @@ export default function RootLayout({
       <body className="bg-white text-base dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SiteHeader />
-            {children}
+          {children}
           <FooterNav />
           <Footer />
         </NextIntlClientProvider>

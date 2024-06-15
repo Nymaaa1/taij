@@ -1,23 +1,20 @@
 "use client";
 import React, { FC } from "react";
-// import rightImgs from "/restaurant/1.jpg";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
-import coffeeShopLogo2 from "@/app/components/images/logos/edelweiss.png";
-import { useTranslations } from "next-intl";
+import coffeeShopLogo2 from "@/app/components/images/karaoke/karaoke3.jpg";
 
-export interface RestaurantIntroductionProps {
+export interface KaraokeIntroductionProps {
   className?: string;
   rightImg?: StaticImageData;
   type?: "type1" | "type2";
 }
 
-const RestaurantIntroduction: FC<RestaurantIntroductionProps> = ({
+const KaraokeIntroduction: FC<KaraokeIntroductionProps> = ({
   className = "lg:py-14",
   // rightImg = rightImgs,
   type = "type1",
 }) => {
-  const message = useTranslations("Restaurant");
   return (
     <div
       className={`nc-SectionOurFeatures relative flex flex-col items-center ${
@@ -27,7 +24,7 @@ const RestaurantIntroduction: FC<RestaurantIntroductionProps> = ({
     >
       <div className="flex-grow">
         <Image
-          src={"/restaurant/1.jpg"}
+          src={"/karaoke/karaoke1.jpg"}
           alt=""
           width={1000}
           height={100}
@@ -40,25 +37,26 @@ const RestaurantIntroduction: FC<RestaurantIntroductionProps> = ({
         }`}
       >
         <span className="uppercase text-sm text-gray-400 tracking-widest">
-          Edelweiss Restaurant
+          Taij Karaoke
         </span>
-
-        <Image src={coffeeShopLogo2} alt="My Photo" width="160" height="160" />
         <ul className="space-y-10 mt-16">
           <li className="space-y-4">
-            <Badge name={message("time")} />
+            <Badge name="Цагийн хуваарь" />
             <span className="block text-xl font-semibold">11:00 - 23:00</span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("time-text")}
+              Үндсэн цэснээс гадна олон улсын буфет өглөөний зоогийг ажлын
+              өдрүүдэд 11:00 - 14:00 цагийн хооронд тогтмол хамтлаг дуучдын
+              тоглолтын хамтаар үйлчилж байна.
             </span>
           </li>
           <li className="space-y-4">
-            <Badge color="green" name={message("order")} />
-            <span className="block text-xl font-semibold">
-              {message("order-header")}
-            </span>
+            <Badge color="green" name="Хүлээн авалт " />
+            <span className="block text-xl font-semibold">Хүлээн авалт</span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("order-text")}
+              Edelweiss ресторан нь 150-200 хүний багтаамжтай хүлээн авалт болон
+              хурим найр, бүх төрлийн баяр ёслолын үйл ажиллагааг чадварлаг хамт
+              олон мэргэжлийн өндөр түвшинд зохион байгуулдаг тул та бүхэн манай
+              рестораныг сонгон үйлчлүүлнэ гэдэгт итгэлтэй байна.
             </span>
           </li>
         </ul>
@@ -67,4 +65,4 @@ const RestaurantIntroduction: FC<RestaurantIntroductionProps> = ({
   );
 };
 
-export default RestaurantIntroduction;
+export default KaraokeIntroduction;
