@@ -29,8 +29,9 @@ const KaraokeAbout: FC<KaraokeAboutProps> = ({}) => {
               alt="Picture of the author"
             />
             <span className="block text-base xl:text-lg text-neutral-6000 dark:text-neutral-400">
-              Манай рестораны мэргэжлийн тогооч нар өдөр бүр Ази, Европ төрлийг
-              зоогийг уламжлалт жорын дагуу бэлтгэн та бүхэндээ хүргэж байна
+              TJ караоке нь сүүлийн үеийн тоног төхөөрөмж бүхий дууны өргөн
+              сонголтой, 15-20 хүний вип өрөөнүүд, халуун хоол зуушаар үйлчилж
+              байна.
             </span>
           </div>
           <div className="flex-grow">
@@ -48,9 +49,30 @@ const KaraokeAbout: FC<KaraokeAboutProps> = ({}) => {
       <div className="container py-16 lg:py-8 space-y-16 lg:space-y-28">
         <KaraokeIntroduction />
       </div>
-      {/* <div className="container py-16 lg:py-8 space-y-16 lg:space-y-28">
-        <HotPotRestaurant />
-      </div> */}
+      <div className="container py-16 lg:py-28 space-y-16 lg:space-y-28">
+        <div className="flex flex-col lg:flex-row space-y-14 lg:space-y-0 lg:space-x-10 items-center relative text-center lg:text-left">
+          <div className="w-screen max-w-full xl:max-w-lg space-y-5 lg:space-y-7">
+            <span className="uppercase text-sm text-gray-400 tracking-widest">
+              Taij Karaoke
+            </span>
+            <span className="block text-base xl:text-lg text-neutral-6000 dark:text-neutral-400">
+              TJ караоке нь сүүлийн үеийн тоног төхөөрөмж бүхий дууны өргөн
+              сонголтой, 15-20 хүний вип өрөөнүүд, халуун хоол зуушаар үйлчилж
+              байна.
+            </span>
+          </div>
+          <div className="flex-grow">
+            <Image
+              className="w-full"
+              src={"/karaoke/download.jpg"}
+              alt=""
+              width={1000}
+              height={100}
+              style={{ borderRadius: "10px" }}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

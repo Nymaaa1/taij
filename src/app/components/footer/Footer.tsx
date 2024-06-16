@@ -4,7 +4,6 @@ import Logo from "@/app/components/shared/Logo";
 import SocialsList1 from "@/app/components/shared/SocialsList1";
 import { CustomLink } from "@/app/data/types";
 import React from "react";
-import FooterNav from "./FooterNav";
 import { useTranslations } from "next-intl";
 import coffeeShopLogo from "@/app/components/images/logos/coffee-shop-logos.png";
 import reastaurantLogo from "@/app/components/images/logos/restaurant-logo.png";

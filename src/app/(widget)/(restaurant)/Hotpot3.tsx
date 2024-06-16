@@ -1,18 +1,17 @@
 "use client";
 import React, { FC } from "react";
-import rightImgs from "@/app/components/images/restaurant/hotpot2.jpg";
+import rightImgs from "@/app/components/images/restaurant/hotpot3.jpg";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
-import coffeeShopLogo2 from "@/app/components/images/logos/restaurant-logo.png";
 import { useTranslations } from "next-intl";
 
-export interface HotPotRestaurantProps {
+export interface HotPotRestaurant3Props {
   className?: string;
   rightImg?: StaticImageData;
   type?: "type1" | "type2";
 }
 
-const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
+const HotPotRestaurant3: FC<HotPotRestaurant3Props> = ({
   className = "lg:py-14",
   rightImg = rightImgs,
   type = "type1",
@@ -25,31 +24,28 @@ const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
       } ${className}`}
       data-nc-id="SectionOurFeatures"
     >
+      <div className="flex-grow">
+        <Image src={rightImg} alt="" style={{ borderRadius: "10px" }} />
+      </div>
       <div
-        className={`max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-2/5 ${
+        className={`max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-1/5 ${
           type === "type1" ? "lg:pl-16" : "lg:pr-16"
         }`}
       >
-        <span className="uppercase text-sm text-gray-400 tracking-widest">
-          Hot pot Restaurant
-        </span>
-        <Image src={coffeeShopLogo2} alt="My Photo" width="160" height="160" />
-
-        <ul className="space-y-10 mt-5">
+        <ul className="space-y-10 mt-16">
           <li className="space-y-4">
-            <Badge name={message("time")} />
-            <span className="block text-xl font-semibold">10:00 - 22:00</span>
+            <Badge color="green" name={message("job")} />
+            <span className="block text-xl font-semibold">
+              {message("job")}
+            </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("time-text2")}
+              {message("service-text")}
             </span>
           </li>
         </ul>
-      </div>
-      <div className="flex-grow">
-        <Image src={rightImg} alt="" style={{ borderRadius: "10px" }} />
       </div>
     </div>
   );
 };
 
-export default HotPotRestaurant;
+export default HotPotRestaurant3;

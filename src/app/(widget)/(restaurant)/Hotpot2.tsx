@@ -1,18 +1,18 @@
 "use client";
 import React, { FC } from "react";
-import rightImgs from "@/app/components/images/restaurant/hotpot2.jpg";
+import rightImgs from "@/app/components/images/restaurant/download.jpg";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
 import coffeeShopLogo2 from "@/app/components/images/logos/restaurant-logo.png";
 import { useTranslations } from "next-intl";
 
-export interface HotPotRestaurantProps {
+export interface HotPotRestaurant2Props {
   className?: string;
   rightImg?: StaticImageData;
   type?: "type1" | "type2";
 }
 
-const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
+const HotPotRestaurant2: FC<HotPotRestaurant2Props> = ({
   className = "lg:py-14",
   rightImg = rightImgs,
   type = "type1",
@@ -26,21 +26,21 @@ const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
       data-nc-id="SectionOurFeatures"
     >
       <div
-        className={`max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-2/5 ${
-          type === "type1" ? "lg:pl-16" : "lg:pr-16"
+        className={`max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-1/5 ${
+          type === "type1" ? "lg:pl-1" : "lg:pr-1"
         }`}
       >
-        <span className="uppercase text-sm text-gray-400 tracking-widest">
-          Hot pot Restaurant
-        </span>
-        <Image src={coffeeShopLogo2} alt="My Photo" width="160" height="160" />
+       
+        {/* <Image src={coffeeShopLogo2} alt="My Photo" width="160" height="160" /> */}
 
-        <ul className="space-y-10 mt-5">
+        <ul className="space-y-10 mt-16">
           <li className="space-y-4">
-            <Badge name={message("time")} />
-            <span className="block text-xl font-semibold">10:00 - 22:00</span>
+            <Badge color="green" name={message("advantage")} />
+            <span className="block text-xl font-semibold">
+              {message("service")}
+            </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("time-text2")}
+              {message("advantage-text")}
             </span>
           </li>
         </ul>
@@ -52,4 +52,4 @@ const HotPotRestaurant: FC<HotPotRestaurantProps> = ({
   );
 };
 
-export default HotPotRestaurant;
+export default HotPotRestaurant2;

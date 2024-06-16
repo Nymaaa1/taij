@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
 import coffeeShopLogo2 from "@/app/components/images/karaoke/karaoke3.jpg";
+import logo from "@/app/components/images/logos/logo.png";
 
 export interface KaraokeIntroductionProps {
   className?: string;
@@ -39,17 +40,18 @@ const KaraokeIntroduction: FC<KaraokeIntroductionProps> = ({
         <span className="uppercase text-sm text-gray-400 tracking-widest">
           Taij Karaoke
         </span>
+        <Image src={logo} alt="My Photo" width="100" height="100" />
         <ul className="space-y-10 mt-16">
           <li className="space-y-4">
             <Badge name="Цагийн хуваарь" />
-            <span className="block text-xl font-semibold">11:00 - 23:00</span>
+            <span className="block text-xl font-semibold">15:00 - 04:00</span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              Үндсэн цэснээс гадна олон улсын буфет өглөөний зоогийг ажлын
-              өдрүүдэд 11:00 - 14:00 цагийн хооронд тогтмол хамтлаг дуучдын
-              тоглолтын хамтаар үйлчилж байна.
+              TJ караоке нь сүүлийн үеийн тоног төхөөрөмж бүхий дууны өргөн
+              сонголтой, 15-20 хүний вип өрөөнүүд, халуун хоол зуушаар үйлчилж
+              байна.
             </span>
           </li>
-          <li className="space-y-4">
+          {/* <li className="space-y-4">
             <Badge color="green" name="Хүлээн авалт " />
             <span className="block text-xl font-semibold">Хүлээн авалт</span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
@@ -58,7 +60,7 @@ const KaraokeIntroduction: FC<KaraokeIntroductionProps> = ({
               олон мэргэжлийн өндөр түвшинд зохион байгуулдаг тул та бүхэн манай
               рестораныг сонгон үйлчлүүлнэ гэдэгт итгэлтэй байна.
             </span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
