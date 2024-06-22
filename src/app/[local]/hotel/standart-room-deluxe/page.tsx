@@ -238,13 +238,13 @@ const StandartRoomPage: FC<StandartRoomPageProps> = ({}) => {
 
         <div className="aspect-w-5 aspect-h-5 sm:aspect-h-3 ring-1 ring-black/10 rounded-xl z-0">
           <div className="rounded-xl overflow-hidden z-0">
-            <iframe
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.143650636421!2d106.87701357624871!3d47.914257871219654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693a9733e2769%3A0xbfd1c3e04edc44e8!2sTaij%20business%20hotel!5e0!3m2!1sen!2smn!4v1719060475873!5m2!1sen!2smn"
               width="100%"
               height="100%"
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY&q=Eiffel+Tower,Paris+France"
             ></iframe>
           </div>
         </div>

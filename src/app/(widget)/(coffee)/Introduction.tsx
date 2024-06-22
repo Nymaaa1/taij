@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
 import coffeeShopLogo2 from "@/app/components/images/logos/logo.png";
+import logoImg2 from "@/app/components/images/coffee/logo.png";
 import { useTranslations } from "next-intl";
 
 export interface CoffeeIntrodcutionProps {
@@ -41,7 +42,7 @@ const CoffeeIntrodcution: FC<CoffeeIntrodcutionProps> = ({
           TAIJ business hotel
         </span>
 
-        <Image src={coffeeShopLogo2} alt="My Photo" width="100" height="100" />
+        <Image src={logoImg2} alt="My Photo" width="100" height="100" />
         <ul className="space-y-10 mt-16">
           <li className="space-y-4">
             <Badge name={message("overview")} />

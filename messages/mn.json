@@ -153,10 +153,12 @@
       "title": "Холбоо барих",
       "menus": [
         {
-          "label": "Хаяг: Тайж Бизнес Буудал, 10-р хороо, Баян-Гол Дүүрэг, Улаанбаатар хот, Монгол улс"
+          "label": "Хаяг: УлаанБаатар хот, Баянгол дүүрэг 4-р хороо, Энхтайваны өргөн чөлөө-93, Тайж Палас"
         },
-        { "label": "Утас :89813149" },
-        { "label": "Емейл: cbvud@gmail.com" }
+        { "label": "Утас: 7777-4777" },
+        { "label": "Ресепшин: 9446-5077" },
+        { "label": "Edelweiss Restaurant: 9972-4702" },
+        { "label": "Taij Hot Pot Restaurant: 9972-4720" }
       ]
     }
   ],
@@ -307,14 +309,16 @@
     "id": 5,
     "href": "/mn/hotel/special-room",
     "asset_image": [
-      "/02 (1).jpg",
-      "/02 (2).jpg",
-      "/02 (3).jpg",
-      "/02 (4).jpg",
-      "/02 (5).jpg",
-      "/02 (6).jpg",
-      "/02 (7).jpg",
-      "/02 (8).jpg"
+      "/lux3/lux3_1.jpg",
+      "/lux3/lux3_5.jpg",
+      "/lux3/lux3_3.jpg",
+      "/lux3/lux3_7.jpg",
+      "/lux3/lux3_8.jpg",
+      "/lux3/lux3_6.jpg",
+      "/lux3/lux3_2.jpg",
+      "/lux3/lux3_4.jpg",
+      "/lux3/lux3_9.jpg",
+      "/lux3/lux3_10.jpg"
     ],
     "title": "Special VIP room",
     "name": "Тусгай өрөө 1 ортой",

@@ -29,6 +29,10 @@ const ListingImageGallery: FC<Props> = ({ images, onClose, isShowModal }) => {
     onClose && onClose();
   };
 
+  const handleImageLoad = (e: HTMLImageElement) => {
+    console.log("load", e);
+  };
+
   const renderContent = () => {
     if (!Array.isArray(images)) {
       return <p>No images available</p>;
@@ -52,6 +56,9 @@ const ListingImageGallery: FC<Props> = ({ images, onClose, isShowModal }) => {
                 width={720}
                 height={480}
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 350px"
+                onLoadingComplete={(e) => {
+                  handleImageLoad(e);
+                }}
               />
             </div>
           ))}
