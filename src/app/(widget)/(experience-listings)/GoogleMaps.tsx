@@ -9,8 +9,11 @@ export default function GoogleMaps() {
   useEffect(() => {
     const initializeMap = async () => {
       const loader = new Loader({
-        apiKey: "AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY",
         version: "quarterly",
+        apiKey: "AIzaSyAW8OE5hUYW8nXRzmS_OlGTXT3DkIJl8NY",
+        id: "__googleMapsScriptId",
+        libraries: [],
+        url: "https://maps.googleapis.com/maps/api/js",
       });
 
       const { Map } = await loader.importLibrary("maps");
@@ -21,11 +24,9 @@ export default function GoogleMaps() {
       };
 
       // MARKER
-      const { Marker } = (await loader.importLibrary(
-        "marker"
-      )) ;
+      const { Marker } = await loader.importLibrary("marker");
 
-      const options:any = {
+      const options: any = {
         center: locationInMap,
         zoom: 15,
         mapId: "NEXT_MAPS_TUTS",
@@ -39,7 +40,6 @@ export default function GoogleMaps() {
         position: locationInMap,
       });
     };
-    
 
     initializeMap();
   }, []);
