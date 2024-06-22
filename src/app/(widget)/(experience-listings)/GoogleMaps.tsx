@@ -10,7 +10,7 @@ export default function GoogleMaps() {
     const initializeMap = async () => {
       const loader = new Loader({
         apiKey: "AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY",
-        version: "quartely",
+        version: "quarterly",
       });
 
       const { Map } = await loader.importLibrary("maps");
