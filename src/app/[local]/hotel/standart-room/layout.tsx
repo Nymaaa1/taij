@@ -3,11 +3,10 @@
 import ListingImageGallery from "@/app/components/listing-image-gallery/ListingImageGallery";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { ReactNode } from "react";
-import { imageGallery as listingStayImageGallery } from "@/app/(widget)/(listing-stay-detail)/constant";
 import { Route } from "next";
 import { useTranslations } from "next-intl";
 
-const HotelRoomLayout = ({ children }: { children: ReactNode }) => {
+const StandartSoloHotelRoomLayout = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
   const thisPathname = usePathname();
   const searchParams = useSearchParams();
@@ -37,4 +36,4 @@ const HotelRoomLayout = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default HotelRoomLayout;
+export default StandartSoloHotelRoomLayout;

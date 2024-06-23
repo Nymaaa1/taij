@@ -13,7 +13,6 @@ export interface GallerySliderProps {
   className?: string;
   galleryImgs: (StaticImageData | string)[];
   ratioClass?: string;
-  uniqueID: string | number;
   href?: Route<string> | string;
   imageClass?: string;
   galleryClass?: string;
@@ -25,7 +24,6 @@ export default function GallerySlider({
   galleryImgs,
   ratioClass = "aspect-w-4 aspect-h-3",
   imageClass = "",
-  uniqueID = "uniqueID",
   galleryClass = "rounded-xl",
   navigation = true,
   href,
@@ -91,7 +89,7 @@ export default function GallerySlider({
                   fill
                   alt="listing card gallery"
                   className={`object-cover ${imageClass}`}
-                  // onLoadingComplete={() => setLoaded(true)}
+                  onLoad={() => setLoaded(true)}
                   sizes="(max-width: 1025px) 100vw, 300px"
                 />
               </motion.div>

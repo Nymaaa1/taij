@@ -1,64 +1,390 @@
 {
+  "Meta-data": "Нүүр хуудас | TAIJ HOTEL",
+  "Meta-about": "Бидний тухай | TAIJ HOTEL",
+  "Meta-restaurant": "Ресторан | TAIJ HOTEL",
+  "Meta-karaoke": "Караоке | TAIJ HOTEL",
+  "Meta-coffee": "Кофе шоп | TAIJ HOTEL",
+  "Meta-hotel": "Зочид буудал | TAIJ HOTEL",
+  "Home-default": {
+    "show-map": "Газрын зураг харах"
+  },
+  "About": {
+    "header": "Бидний тухай",
+    "welcome": "",
+    "about-text": "Монгол улсад зочилох үйлчилгээний салбараа 4 нэгдмэл байдлаар хангасан Тайж бизнес зочид буудал нь нийт 4 зэрэглэлийн 39 өрөө, Кофе шоп, Ази Европ ресторан, Караоке өрөө, Саун, Фитнесийн заал, Хурал семнарийн өрөө, бүх үйлчилгээний цогцолбор юм.",
+    "overview": "Товч танилцуулга",
+    "overview-text": "“Тайж бридж групп” нь ХХК ны “ Тайж палас” зочид буудал нь Улаанбаатар хот Баянгол дүүргийн 4-р хорооны ЭТӨЧ-96 тоот оршино. “Тайж палас” зочид буудал нь 2019.06.07 нд үүсгэнэ байгуулагдаж монгол улсын зочилох үйлчилгээний салбарт 4 одны зэрэглэл бүхий зочид буудлыг ашиглалтанд оруулж үүд хаалгаа нээнэ ажиллаж байна.",
+    "1floor": "1-р давхарт",
+    "1floor-text": "Караоке, Кофе шоп, Ресепшин",
+    "2floor": "2-р давхарт",
+    "2floor-text": "“Edelweiss” ресторан нь VIP өрөөнүүд.,200-250 хүн хүлээж авах хүчин чадалтай мастер тогоочийн шинэ шинэлэг хоол , бүх төрлийн хүлээн авалт арга хэмжээ, амьд хөгжмийн хамтлагийн тоглолт үзүүлбэр, тогтмол өдрүүдэд тогоочийн хоолны өдөрлөг, жуулчины улиралд жуулчидад зориулсан монгол ахуй, соел урлагийн арга хэмжээ, европ өглөөний цайны шинэлэг үйлчилгээ, хүргэлтийн үйлчилгээг нэвтрүүлж байна.",
+    "3floor": "3-р давхарт",
+    "3floor-text": "3-р давхарт “ Тайж” Hot pot ази ресторант VIP өрөөнүүд. /150-175 хүн хүлээж авах хүчин чадалтай/ манай ресторан нь хятад, монгол, ази чадварлаг тогооч нарын хоолоор үйлчилж, hot pot, ази хоолны соёлыг нэвтрүүлж байнаа.",
+    "456floor": "4,5,6-р давхарт",
+    "456floor-text": "4,5,6-р давхарууд 4 одны зэрэглэл хангахуйц зочид буудлын өрөөнүүд. Зочид буудлын өрөөнүүд нь стандарт, хагас люкс, бүтэн люкс, гэр бүлийн өрөө, ерөнхийлөгчийн өрөө зэрэг 5 зэрэглэлийн 10 ангилалын 72 ортой, 39 өрөөтэй.",
+    "7floor": "7-р давхарт",
+    "7floor-text": "“Тайж бридж групп” ХХК-ийн удирлагын оффис, 20-30 хүнийн хурлын танхим, “Тайж фиттнес” төв, “Тайж” аялал жуучлалын компаний удирдагийн оффис гэх мэт байрлана."
+  },
+  "Coffee": {
+    "header": "Кофе шоп",
+    "welcome": "",
+    "about-text": "Ажил хэрэгч хүмүүст зориулсан 07:00 цагаас үдшийн 23:00 хүртэл ажиллах кофе шоп нь чадварлаг бартендийн найруулсан кофегоор  үйлчилж, рестораны тогоочийн хийсэн нарийн боов, дессертийг амтлаж ажилаа  амжуулаарай."
+  },
+  "Restaurant": {
+    "header": "Ресторан",
+    "welcome": "",
+    "edelweiss-text": "Манай рестораны мэргэжлийн тогооч нар өдөр бүр Ази, Европ төрлийг зоогийг уламжлалт жорын дагуу бэлтгэн та бүхэндээ хүргэж байна.",
+    "time": "Цагийн хуваарь",
+    "time-text": "Үндсэн цэснээс гадна олон улсын буфет өглөөний зоогийг ажлын өдрүүдэд 11:00 - 14:00 цагийн хооронд тогтмол хамтлаг дуучдын тоглолтын хамтаар үйлчилж байна.",
+    "order": "Хүлээн авалт",
+    "order-header": "Хүлээн авалт",
+    "order-text": "Edelweiss ресторан нь 150-200 хүний багтаамжтай хүлээн авалт болон хурим найр, бүх төрлийн баяр ёслолын үйл ажиллагааг чадварлаг хамт олон мэргэжлийн өндөр түвшинд зохион байгуулдаг тул та бүхэн манай рестораныг сонгон үйлчлүүлнэ гэдэгт итгэлтэй байна.",
+    "job": "Хамт олон",
+    "time-text2": "170 хүн хүлээж авах хүчин чадалтай Тайж hot pot ресторан нь 10:00 цагаас үдшийн 22:00 цаг хүртэл танд үйлчлэн ажиллаж байна.",
+    "service": "Үйлчилгээ",
+    "service-text": "Манай ресторан нь хятад тогоочийн амталсан нарийн хоол, өөрийн сонирхолд нийцүүлэн хийж идэх халуун тогоо, болон Ази чиг урсгалыг барин үйлчилгээ явуулж байна.",
+    "advantage": "Давуу тал",
+    "advantage-text": "Манай рестораны давуу тал тав тухтай найрсаг үйлчилгээ, хоолны давтагдашгүй амт чанарыг тан бүхэндээ санал болгож байна.",
+    "phone": "Холбогдох дугаар",
+    "location": "Байрлал"
+  },
+  "Mobile": {
+    "search": "Хайх",
+    "whereto": "",
+    "clear": "Цэвэрлэх",
+    "when": "Хэзээ",
+    "who": "Хэн"
+  },
+  "roomDefault": {
+    "showPhotos": "Зураг харах",
+    "location": "Улаанбаатар, Монгол",
+    "guests": "хүн",
+    "beds": "ор",
+    "baths": "угаалгын өрөө",
+    "bedrooms": "өрөө",
+    "stayinformation": "Мэдээлэл",
+    "amenities": "Тав тух",
+    "amenitiesAbout": "Өрөөний тав тухтай байдал, үйлчилгээний талаар",
+    "secondLocation": "Хаяг",
+    "locationofTaij": "Монгол Улаанбаатар 25р хороолол Тайж бизнес зочид буудал",
+    "order": "Захиалах"
+  },
   "Navigation": [
     {
       "id": "ncNanoId_61",
-      "href": "/en",
-      "name": "About Us"
+      "href": "/mn/about",
+      "name": "Бидний тухай"
     },
     {
       "id": "ncNanoId_61",
-      "href": "/",
-      "name": "Rooms",
+      "name": "Өрөө",
       "type": "dropdown",
       "children": [
         {
           "id": "ncNanoId_62",
-          "href": "/",
-          "name": "Online booking"
+          "name": "Стандарт өрөө",
+          "type": "dropdown",
+          "children": [
+            {
+              "id": "ncNanoId_62",
+              "href": "/mn/hotel/standart-room",
+              "name": "Стандарт өрөө 1 ортой"
+            },
+            {
+              "id": "ncNanoId_63",
+              "href": "/mn/hotel/standart-room-deluxe",
+              "name": "Стандарт өрөө 2 ортой"
+            }
+          ]
         },
         {
           "id": "ncNanoId_63",
-          "href": "/home-2",
-          "name": "Real estate",
-          "isNew": true
+          "name": "Бүтэн люкс",
+          "type": "dropdown",
+          "children": [
+            {
+              "id": "ncNanoId_62",
+              "href": "/mn/hotel/lux-room",
+              "name": "Бүтэн люкс өрөө 2 ортой"
+            },
+            {
+              "id": "ncNanoId_63",
+              "href": "/mn/hotel/lux-room-deluxe",
+              "name": "Бүтэн люкс өрөө 3 ортой"
+            }
+          ]
         },
         {
           "id": "ncNanoId_64",
-          "href": "/home-3",
-          "name": "Home 3",
-          "isNew": true
+          "href": "/mn/hotel/special-room",
+          "name": "Тусгай өрөө"
+        },
+        {
+          "id": "ncNanoId_65",
+          "href": "/mn/hotel/family-room",
+          "name": "Гэр бүлийн өрөө"
         }
       ]
     },
     {
       "id": "ncNanoId_61",
-      "href": "/en/restaurant",
-      "name": "Restaurant"
+      "href": "/mn/restaurant",
+      "name": "Ресторан"
     },
     {
       "id": "ncNanoId_61",
-      "href": "/",
-      "name": "Karaoke",
-      "type": "dropdown",
-      "children": [
+      "href": "/mn/karaoke",
+      "name": "Караоке"
+    },
+    {
+      "id": "ncNanoId_61",
+      "href": "/mn/coffee",
+      "name": "Кофе шоп"
+    }
+  ],
+  "Footer": [
+    {
+      "id": "5",
+      "title": "Бидний тухай",
+      "menus": [{ "href": "/mn/about", "label": "Тайж" }]
+    },
+    {
+      "id": "1",
+      "title": "Холбоо барих",
+      "menus": [
         {
-          "id": "ncNanoId_62",
-          "href": "/",
-          "name": "Online booking"
+          "label": "Хаяг: УлаанБаатар хот, Баянгол дүүрэг 4-р хороо, Энхтайваны өргөн чөлөө-93, Тайж Палас"
         },
-        {
-          "id": "ncNanoId_63",
-          "href": "/home-2",
-          "name": "Real estate",
-          "isNew": true
-        },
-        {
-          "id": "ncNanoId_64",
-          "href": "/home-3",
-          "name": "Home 3",
-          "isNew": true
-        }
+        { "label": "Утас: 7777-4777" },
+        { "label": "Ресепшин: 9446-5077" },
+        { "label": "Edelweiss Restaurant: 9972-4702" },
+        { "label": "Taij Hot Pot Restaurant: 9972-4720" }
       ]
     }
-  ]
+  ],
+  "StandartRoom1": {
+    "id": 1,
+    "href": "/mn/hotel/standart-room",
+    "asset_image": [
+      "/standart1/standart1_1-min.jpg",
+      "/standart1/standart1_2-min.jpg",
+      "/standart1/standart1_6-min.jpg",
+      "/standart1/standart1_3-min.jpg",
+      "/standart1/standart1_8-min.JPG",
+      "/standart1/standart1_7-min.jpg",
+      "/standart1/standart1_4-min.jpg",
+      "/standart1/standart1_5-min.jpg"
+    ],
+    "title": "Standart VIP room",
+    "name": "Стандарт өрөө 1 ортой",
+    "beds": "1",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Минималсит загварын чиг хандлагатай, таны тайван амгалан амралт, эргэн тойронд эмх цэгцтэй , чөлөөтэй амрахад туслана.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "33 м/кв"
+  },
+  "StandartRoom2": {
+    "id": 2,
+    "href": "/mn/hotel/standart-room-deluxe",
+    "asset_image": [
+      "/standart2/standart2_1-min.jpg",
+      "/standart2/standart2_2-min.jpg",
+      "/standart2/standart2_3-min.jpg",
+      "/standart2/standart2_4-min.jpg",
+      "/standart2/standart2_5-min.jpg",
+      "/standart2/standart2_6-min.jpg",
+      "/standart2/standart2_7-min.jpg"
+    ],
+    "title": "Standart VIP room",
+    "name": "Стандарт өрөө 2 ортой",
+    "beds": "2",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Минималсит загварын чиг хандлагатай, таны тайван амгалан амралт, эргэн тойронд эмх цэгцтэй , чөлөөтэй амрахад туслана.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "33 м/кв"
+  },
+  "LuxRoom1": {
+    "id": 3,
+    "href": "/mn/hotel/lux-room",
+    "asset_image": [
+      "/lux2/lux2_1-min.jpg",
+      "/lux2/lux2_8-min.jpg",
+      "/lux2/lux2_2-min.jpg",
+      "/lux2/lux2_3-min.jpg",
+      "/lux2/lux2_4-min.jpg",
+      "/lux2/lux3_5-min.jpg",
+      "/lux2/lux3_6-min.jpg",
+      "/lux3/lux3_7-min.jpg"
+    ],
+    "title": "Lux VIP room",
+    "name": "Бүтэн люкс өрөө 2 ортой",
+    "beds": "2",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Бүтэн люкс өрөө нь хотын үзэмж харагдах цэлгэр том цонх, минималист тохижилттой, эмх цэгцтэй орчин, тухтай амрах нөхцөлийг бүрдүүлсэн болно.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "46 м/кв"
+  },
+  "LuxRoom2": {
+    "id": 4,
+    "href": "/mn/hotel/lux-room-deluxe",
+    "asset_image": [
+      "/lux3/lux3_1-min.jpg",
+      "/lux3/lux3_5-min.jpg",
+      "/lux3/lux3_3-min.jpg",
+      "/lux3/lux3_7-min.jpg",
+      "/lux3/lux3_8-min.jpg",
+      "/lux3/lux3_6-min.jpg",
+      "/lux3/lux3_2-min.jpg",
+      "/lux3/lux3_4-min.jpg",
+      "/lux3/lux3_9-min.jpg",
+      "/lux3/lux3_10-min.jpg"
+    ],
+    "title": "Lux VIP room",
+    "name": "Бүтэн люкс өрөө 3 ортой",
+    "beds": "3",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Бүтэн люкс өрөө нь хотын үзэмж харагдах цэлгэр том цонх, минималист тохижилттой, эмх цэгцтэй орчин, тухтай амрах нөхцөлийг бүрдүүлсэн болно.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "64 м/кв"
+  },
+  "Special-room": {
+    "id": 5,
+    "href": "/mn/hotel/special-room",
+    "asset_image": [
+      "/lux3/lux3_1.jpg",
+      "/lux3/lux3_5.jpg",
+      "/lux3/lux3_3.jpg",
+      "/lux3/lux3_7.jpg",
+      "/lux3/lux3_8.jpg",
+      "/lux3/lux3_6.jpg",
+      "/lux3/lux3_2.jpg",
+      "/lux3/lux3_4.jpg",
+      "/lux3/lux3_9.jpg",
+      "/lux3/lux3_10.jpg"
+    ],
+    "title": "Special VIP room",
+    "name": "Тусгай өрөө 1 ортой",
+    "beds": "1",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Ерөнхийлөгчийн зориулалттай тусгай өрөө зочины болон, амралтын  гэсэн 2 тусдаа дамждаг өрөөтэй. Таны ажил амралтыг хослуулж, мөн алжаал тайлахад зориулагдсан саун душ, нэг дор.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" },
+      { "name": "Ажлын ширээ", "icon": "la-table" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": "78 м/кв"
+  },
+  "Family-room": {
+    "id": 6,
+    "href": "/mn/hotel/family-room",
+    "asset_image": [
+      "/family/family1-min.JPG",
+      "/family/family2-min.JPG",
+      "/family/family11-min.JPG",
+      "/family/family4-min.jpg",
+      "/family/family5-min.jpg",
+      "/family/family6-min.jpg",
+      "/family/family7-min.jpg",
+      "/family/family8-min.jpg",
+      "/family/family9-min.jpg",
+      "/family/family10-min.jpg",
+      "/family/family3-min.jpg",
+      "/family/family12-min.jpg"
+    ],
+    "title": "Family VIP room",
+    "name": "Гэр бүлийн өрөө 1 ортой",
+    "beds": "1",
+    "baths": "1",
+    "bedrooms": "1",
+    "guests": "2",
+    "information": "Гэр бүлийн тав тухтай байдлыг бий болгож, олон хоногоор байрлаж амрахад зориулагдсан мини гал тогоо,  амралтын өрөө тусдаа тав тухтай орчин таныг амраах болно.",
+    "amenities": [
+      { "name": "Смарт ТВ", "icon": "la-tv" },
+      { "name": "Өндөр хурдны интернет", "icon": "la-wifi" },
+      { "name": "Угаалгын өрөө", "icon": "la-bath" },
+      { "name": "Ус кофе", "icon": "la-coffee" },
+      { "name": "Мини бар", "icon": "la-glass-martini-alt" },
+      { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" },
+      { "name": "Сейф", "icon": "la-shield-alt" },
+      { "name": "Саун", "icon": "la-hot-tub" },
+      { "name": "Ванн душ", "icon": "la-shower" },
+      { "name": "Ажлын ширээ", "icon": "la-table" }
+    ],
+    "price": "120,000",
+    "service_charge": "Үйлчилгээний хураамж",
+    "price_total": "Нийт",
+    "night": "хоног",
+    "square": " м/кв"
+  }
 }

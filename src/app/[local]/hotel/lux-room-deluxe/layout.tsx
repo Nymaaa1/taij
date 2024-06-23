@@ -3,7 +3,6 @@
 import ListingImageGallery from "@/app/components/listing-image-gallery/ListingImageGallery";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { ReactNode } from "react";
-import { imageGallery as listingStayImageGallery } from "@/app/(widget)/(listing-stay-detail)/constant";
 import { Route } from "next";
 import { useTranslations } from "next-intl";
 

@@ -15,7 +15,6 @@ const DEMO_STAY_LISTINGS = __stayListing.map((post, index): StayDataType => {
     id: `stayListing_${index}_`,
     saleOff: !index ? "-20% today" : post.saleOff,
     isAds: !index ? true : post.isAds,
-    author: DEMO_AUTHORS.filter((user) => user.id === post.authorId)[0],
     listingCategory: category,
     href: post.href as Route,
   };

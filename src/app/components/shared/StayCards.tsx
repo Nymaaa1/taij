@@ -19,7 +19,6 @@ const StayCardH: FC<StayCardHProps> = ({ className = "", roomName = "" }) => {
         <GallerySlider
           ratioClass="aspect-w-6 aspect-h-5"
           galleryImgs={message.raw("asset_image")}
-          uniqueID={`StayCardH_1`}
           href={message("href")}
         />
       </div>

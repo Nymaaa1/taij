@@ -56,9 +56,9 @@ const ListingImageGallery: FC<Props> = ({ images, onClose, isShowModal }) => {
                 width={720}
                 height={480}
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 350px"
-                onLoadingComplete={(e) => {
-                  handleImageLoad(e);
-                }}
+                // onLoad={(e) => {
+                //   handleImageLoad(e);
+                // }}
               />
             </div>
           ))}

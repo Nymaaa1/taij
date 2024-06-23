@@ -5,7 +5,9 @@ import ButtonClose from "@/app/components/shared/ButtonClose";
 import StayCard2 from "@/app/components/shared/StayCards";
 import GoogleMaps from "./GoogleMaps";
 import { useTranslations } from "next-intl";
+import { DEMO_STAY_LISTINGS } from "@/app/components/data/Listings";
 
+const DEMO_STAYS = DEMO_STAY_LISTINGS.filter((_, i) => i < 12);
 export interface SectionGridHasMapProps {}
 
 const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {

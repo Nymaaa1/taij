@@ -34,8 +34,8 @@ export async function generateMetadata({
   };
 }
 
-const HotelRoomLayout = ({ children }: { children: ReactNode }) => {
+const StandartHotelRoomLayout = ({ children }: { children: ReactNode }) => {
   return children;
 };
 
-export default HotelRoomLayout;
+export default StandartHotelRoomLayout;
