@@ -64,7 +64,6 @@ export type TwMainColor =
 //
 export interface StayDataType {
   id: string | number;
-  author: AuthorType;
   date: string;
   href: Route<string>;
   title: string;

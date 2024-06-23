@@ -46,7 +46,7 @@ export const Amenities_demos = [
 export const imageGallery: ListingGalleryImage[] = [...PHOTOS].map(
   (item, index): ListingGalleryImage => {
     return {
-      id: index,
+      // id: index,
       url: item,
     };
   }

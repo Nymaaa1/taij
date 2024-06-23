@@ -2,7 +2,6 @@
 import React, { FC } from "react";
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/app/components/shared/Badge";
-import coffeeShopLogo2 from "@/app/components/images/karaoke/karaoke3.jpg";
 import logo from "@/app/components/images/logos/logo.png";
 
 export interface KaraokeIntroductionProps {

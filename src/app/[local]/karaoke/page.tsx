@@ -2,11 +2,10 @@ import React, { FC } from "react";
 import "../restaurant/pagee.scss";
 import Image from "next/image";
 import BgGlassmorphism from "@/app/components/header/BgGlassmorphism";
-import kar1 from "@/app/components/images/karaoke/karaoke2.jpg";
-import kar2 from "@/app/components/images/karaoke/karaoke3.jpg";
+// import kar1 from "@/app/components/images/karaoke/karaoke2.jpg";
+// import kar2 from "@/app/components/images/karaoke/karaoke3.jpg";
 import KaraokeHome from "@/app/(widget)/(karaoke)/Home";
 import KaraokeIntroduction from "@/app/(widget)/(karaoke)/Introduction";
-import logo from "@/app/components/images/logos/logo.png";
 import logoImg from "@/app/components/images/logos/logo.png";
 
 export interface KaraokeAboutProps {}
@@ -35,14 +34,14 @@ const KaraokeAbout: FC<KaraokeAboutProps> = ({}) => {
             </span>
           </div>
           <div className="flex-grow">
-            <Image
+            {/* <Image
               className="w-full"
-              src={kar2}
+              src={kar1}
               alt=""
               width={1000}
               height={100}
               style={{ borderRadius: "10px" }}
-            />
+            /> */}
           </div>
         </div>
       </div>
