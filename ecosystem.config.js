@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: "my-next-app",
+        name: "my-next-ap",
         script: "npm",
         args: "start",
         env: {
