@@ -190,7 +190,7 @@
       { "name": "Мини бар", "icon": "la-glass-martini-alt" },
       { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" }
     ],
-    "price": "120,000",
+    "price": "180,000",
     "service_charge": "Үйлчилгээний хураамж",
     "price_total": "Нийт",
     "night": "хоног",
@@ -223,7 +223,7 @@
       { "name": "Мини бар", "icon": "la-glass-martini-alt" },
       { "name": "Халуун хүйтэн үлээгч", "icon": "la-snowflake" }
     ],
-    "price": "120,000",
+    "price": "180,000",
     "service_charge": "Үйлчилгээний хураамж",
     "price_total": "Нийт",
     "night": "хоног",
@@ -339,7 +339,7 @@
       { "name": "Ванн душ", "icon": "la-shower" },
       { "name": "Ажлын ширээ", "icon": "la-table" }
     ],
-    "price": "120,000",
+    "price": "440,000",
     "service_charge": "Үйлчилгээний хураамж",
     "price_total": "Нийт",
     "night": "хоног",

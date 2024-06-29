@@ -26,7 +26,7 @@ const CoffeeIntrodcution: FC<CoffeeIntrodcutionProps> = ({
     >
       <div className="flex-grow">
         <Image
-          src={"/about1.jpg"}
+          src={"/coffee/5.png"}
           alt=""
           width={1000}
           height={100}
@@ -58,38 +58,7 @@ const CoffeeIntrodcution: FC<CoffeeIntrodcutionProps> = ({
               {message("1floor-text")}
             </span>
           </li>
-          <li className="space-y-4">
-            <span className="block text-lg font-semibold">
-              {message("2floor")}
-            </span>
-            <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("2floor-text")}
-            </span>
-          </li>
-          <li className="space-y-4">
-            <span className="block text-lg font-semibold">
-              {message("3floor")}
-            </span>
-            <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("3floor-text")}
-            </span>
-          </li>
-          <li className="space-y-4">
-            <span className="block text-lg font-semibold">
-              {message("456floor")}
-            </span>
-            <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("456floor-text")}
-            </span>
-          </li>
-          <li className="space-y-4">
-            <span className="block text-lg font-semibold">
-              {message("7floor")}
-            </span>
-            <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              {message("7floor-text")}
-            </span>
-          </li>
+          
         </ul>
       </div>
     </div>

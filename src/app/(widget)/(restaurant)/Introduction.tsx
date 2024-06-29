@@ -27,7 +27,7 @@ const RestaurantIntroduction: FC<RestaurantIntroductionProps> = ({
     >
       <div className="flex-grow">
         <Image
-          src={"/restaurant/1.jpg"}
+          src={"/coffee/5.png"}
           alt=""
           width={1000}
           height={100}
