@@ -24,7 +24,7 @@ const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({}) => {
           <div className="flex-grow">
             <Image
               className="w-full"
-              src={"/about/about6-min.jpg"}
+              src={"/family/family1-min.jpg"}
               alt=""
               width={1000}
               height={1000}
