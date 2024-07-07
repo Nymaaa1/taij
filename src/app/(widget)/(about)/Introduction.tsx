@@ -25,7 +25,7 @@ const AboutIntroduction: FC<AboutIntroductionProps> = ({
     >
       <div className="flex-grow">
         <Image
-          src={"/family/family1-min.jpg"}
+          src={"/family/family1.jpg"}
           alt=""
           width={1000}
           height={100}
