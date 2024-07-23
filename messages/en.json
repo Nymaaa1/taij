@@ -260,7 +260,7 @@
       { "name": "Sauna", "icon": "la-hot-tub" },
       { "name": "Bath Shower", "icon": "la-shower" }
     ],
-    "price": "120,000",
+    "price": "340,000",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -299,7 +299,7 @@
       { "name": "Sauna", "icon": "la-hot-tub" },
       { "name": "Bath Shower", "icon": "la-shower" }
     ],
-    "price": "120,000",
+    "price": "260,000",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -381,7 +381,7 @@
       { "name": "Bath Shower", "icon": "la-shower" },
       { "name": "Work Table", "icon": "la-table" }
     ],
-    "price": "120,000",
+    "price": "0,000",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",

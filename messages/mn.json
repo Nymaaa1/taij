@@ -260,7 +260,7 @@
       { "name": "Саун", "icon": "la-hot-tub" },
       { "name": "Ванн душ", "icon": "la-shower" }
     ],
-    "price": "120,000",
+    "price": "340,000",
     "service_charge": "Үйлчилгээний хураамж",
     "price_total": "Нийт",
     "night": "хоног",
@@ -299,7 +299,7 @@
       { "name": "Саун", "icon": "la-hot-tub" },
       { "name": "Ванн душ", "icon": "la-shower" }
     ],
-    "price": "120,000",
+    "price": "260,000",
     "service_charge": "Үйлчилгээний хураамж",
     "price_total": "Нийт",
     "night": "хоног",
@@ -381,7 +381,7 @@
       { "name": "Ванн душ", "icon": "la-shower" },
       { "name": "Ажлын ширээ", "icon": "la-table" }
     ],
-    "price": "120,000",
+    "price": "0,000",
     "service_charge": "Үйлчилгээний хураамж",
     "price_total": "Нийт",
     "night": "хоног",

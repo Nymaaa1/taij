@@ -11,7 +11,7 @@ const ButtonSubmit: FC<Props> = ({ href }) => {
   const message = useTranslations("Mobile");
   return (
     <Link
-      href={"/href"}
+      href={"https://www.booking.com/hotel/mn/taij-business-ulaanbaatar.html"}
       type="button"
       className="h-14 md:h-16 w-full md:w-16 rounded-full bg-[#CAA866] hover:bg-[#b5975b] flex items-center justify-center text-neutral-50 focus:outline-none"
       // style={{ backgroundColor: "#CAA866" }}

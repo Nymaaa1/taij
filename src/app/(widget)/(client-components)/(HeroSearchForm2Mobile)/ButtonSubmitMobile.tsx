@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 interface Props {
   className?: string;
@@ -7,18 +8,20 @@ interface Props {
 }
 const ButtonSubmitMobile: FC<Props> = ({
   className = "",
-  onClick = () => {},
+  onClick = () => { },
 }) => {
   const message = useTranslations("Mobile");
   return (
-    <button
-      type="submit"
-      onClick={(e) => {
-        e.preventDefault();
-        onClick();
-      }}
-      className={`flex-shrink-0 px-4 py-2.5 cursor-pointer rounded-xl bg-[#CAA866] hover:bg-[#b5975b] flex items-center justify-center text-neutral-50 focus:outline-none ${className} relative z-20`}
+    <Link
+      href="https://www.booking.com/hotel/mn/taij-business-ulaanbaatar.html"
+      type="button"
+      className="flex-shrink-0 px-4 py-2.5 cursor-pointer rounded-xl bg-[#CAA866] hover:bg-[#b5975b] flex items-center justify-center text-neutral-50 focus:outline-none ${className} relative z-20"
+      // onClick={(e) => {
+        // e.preventDefault();
+        // onClick();
+      // }}
     >
+     
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"
@@ -34,7 +37,7 @@ const ButtonSubmitMobile: FC<Props> = ({
         />
       </svg>
       <span className="ml-2">{message("search")}</span>
-    </button>
+    </Link>
   );
 };
 
