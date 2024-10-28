@@ -190,7 +190,7 @@
       { "name": "Mini Bar", "icon": "la-glass-martini-alt" },
       { "name": "Warmth heater", "icon": "la-snowflake" }
     ],
-    "price": "171",
+    "price": "71",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
