@@ -84,7 +84,7 @@ const StayCardH: FC<StayCardHProps> = ({ className = "", roomName = "" }) => {
         <div className="w-14 border-b border-neutral-100 dark:border-neutral-800 my-4"></div>
         <div className="flex justify-between items-end">
           <span className="text-base font-semibold text-secondary-500">
-            {message("price")}₮
+            {message("price")}$
             {` `}
             <span className="text-sm text-neutral-500 dark:text-neutral-400 font-normal">
               /{message("night")}

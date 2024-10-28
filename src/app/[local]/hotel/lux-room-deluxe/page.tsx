@@ -257,7 +257,7 @@ const StandartRoomPage: FC<StandartRoomPageProps> = ({}) => {
       <div className="listingSectionSidebar__wrap shadow-xl">
         <div className="flex justify-between">
           <span className="text-3xl font-semibold">
-            {rooms("price")}₮
+            {rooms("price")}$
             <span className="ml-1 text-base font-normal text-neutral-500 dark:text-neutral-400">
               /{rooms("night")}
             </span>
@@ -267,18 +267,18 @@ const StandartRoomPage: FC<StandartRoomPageProps> = ({}) => {
         <div className="flex flex-col space-y-4">
           <div className="flex justify-between text-neutral-6000 dark:text-neutral-300">
             <span>
-              {rooms("price")}₮ x 1 {rooms("night")}
+              {rooms("price")}$ x 1 {rooms("night")}
             </span>
-            <span>{rooms("price")}₮</span>
+            <span>{rooms("price")}$</span>
           </div>
           <div className="flex justify-between text-neutral-6000 dark:text-neutral-300">
             <span>{rooms("service_charge")}</span>
-            <span>0₮</span>
+            <span>0$</span>
           </div>
           <div className="border-b border-neutral-200 dark:border-neutral-700"></div>
           <div className="flex justify-between font-semibold">
             <span>{rooms("price_total")}</span>
-            <span>{rooms("price")}₮</span>
+            <span>{rooms("price")}$</span>
           </div>
         </div>
         <ButtonPrimary>{defaults("order")}</ButtonPrimary>
