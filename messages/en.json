@@ -190,7 +190,7 @@
       { "name": "Mini Bar", "icon": "la-glass-martini-alt" },
       { "name": "Warmth heater", "icon": "la-snowflake" }
     ],
-    "price": "180,000",
+    "price": "171",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -223,7 +223,7 @@
       { "name": "Mini Bar", "icon": "la-glass-martini-alt" },
       { "name": "Warmth heater", "icon": "la-snowflake" }
     ],
-    "price": "180,000",
+    "price": "71",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -260,7 +260,7 @@
       { "name": "Sauna", "icon": "la-hot-tub" },
       { "name": "Bath Shower", "icon": "la-shower" }
     ],
-    "price": "340,000",
+    "price": "118",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -299,7 +299,7 @@
       { "name": "Sauna", "icon": "la-hot-tub" },
       { "name": "Bath Shower", "icon": "la-shower" }
     ],
-    "price": "260,000",
+    "price": "124",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -339,7 +339,7 @@
       { "name": "Bath Shower", "icon": "la-shower" },
       { "name": "Work Table", "icon": "la-table" }
     ],
-    "price": "440,000",
+    "price": "152",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
@@ -381,7 +381,7 @@
       { "name": "Bath Shower", "icon": "la-shower" },
       { "name": "Work Table", "icon": "la-table" }
     ],
-    "price": "0,000",
+    "price": "152",
     "service_charge": "Service Charge",
     "price_total": "All",
     "night": "night",
